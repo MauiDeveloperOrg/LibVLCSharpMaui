@@ -3,10 +3,11 @@
 		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 	</PropertyGroup>
 	<ItemGroup>
-		<!--<PackageVersion Include="LibVLCSharp" Version="4.0.0-alpha-20221116-6275" />-->
 		<PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
-	</ItemGroup>
-	<ItemGroup Condition="$(TargetFramework.Contains('-windows'))">
-		<!--<PackageVersion Include="VideoLAN.LibVLC.Windows" Version="4.0.0-alpha-20221115" />-->
+		<PackageVersion Include="LibVLCSharp" Version="3.6.7" />
+		<PackageVersion Include="VideoLAN.LibVLC.Android" Version="3.2.0.1" />
+		<PackageVersion Include="VideoLAN.LibVLC.iOS" Version="3.3.17" />
+		<PackageVersion Include="VideoLAN.LibVLC.Windows" Version="3.0.17.4" />
+		<PackageVersion Include="Microsoft.Graphics.Win2D" Version="1.0.4" />
 	</ItemGroup>
 </Project>

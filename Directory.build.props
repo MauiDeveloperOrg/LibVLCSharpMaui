@@ -5,8 +5,8 @@
 		
 		<OutputPath>$(MSBuildThisFileDirectory)Binary\</OutputPath>
 		<LangVersion>latest</LangVersion>
-		
-		<Nullable>enable</Nullable>
+
+		<Nullable>disable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		
 		<!-- Required for C# Hot Reload -->

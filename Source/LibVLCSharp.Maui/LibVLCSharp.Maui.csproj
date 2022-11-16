@@ -26,11 +26,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="LibVLCSharp" />
+		<!--<PackageReference Include="LibVLCSharp" />-->
 	</ItemGroup>
 
 	<ItemGroup Condition="$(TargetFramework.Contains('-windows'))">
-		<PackageReference Include="VideoLAN.LibVLC.Windows" />
+		<!--<PackageReference Include="VideoLAN.LibVLC.Windows" />-->
 	</ItemGroup>
 
 </Project>

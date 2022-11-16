@@ -1,0 +1,9 @@
+﻿<Project>
+
+	<ItemGroup>
+	</ItemGroup>
+
+	<ItemGroup Condition="$(TargetFramework.Contains('-windows'))">
+		<!-- Required - WinUI does not yet have buildTransitive for everything -->
+	</ItemGroup>
+</Project>

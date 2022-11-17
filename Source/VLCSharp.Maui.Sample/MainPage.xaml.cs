@@ -1,7 +1,4 @@
-﻿using LibVLCSharp.Shared;
-using MediaPlayerX = LibVLCSharp.Shared.MediaPlayer;
-
-namespace VLCSharp.Maui.Sample;
+﻿namespace VLCSharp.Maui.Sample;
 
 public partial class MainPage : ContentPage
 {

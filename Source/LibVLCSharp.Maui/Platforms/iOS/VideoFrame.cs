@@ -3,7 +3,7 @@ using UIKit;
 
 namespace LibVLCSharp.Maui.Platforms.iOS;
 
-public class VideoElement : UIView, IVideoView
+public class VideoFrame : UIView, IVideoView
 {
     private MediaPlayerX mediaPlayer;
 

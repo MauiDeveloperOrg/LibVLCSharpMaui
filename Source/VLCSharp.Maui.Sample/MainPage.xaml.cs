@@ -8,6 +8,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
+
+        Source.Text = @"C:\Users\13247\Downloads\Sony_4K_Camp.mp4";
     }
 
     private void Button_Clicked(object sender, EventArgs e)
@@ -17,12 +19,7 @@ public partial class MainPage : ContentPage
             string url = Source.Text;
             if (!string.IsNullOrEmpty(url))
             {
-                MediaDraw.MediaPlayer?.Stop();
-
-                LibVLC lib = new();
-                Media media = new(lib, new Uri(url));
-                MediaDraw.MediaPlayer = new MediaPlayerX(media);
-                MediaDraw.MediaPlayer.Play();
+                Video.Source = new Uri(url);
 
                 if (File.Exists(url) && new FileInfo(url) is FileInfo fileInfo)
                 {

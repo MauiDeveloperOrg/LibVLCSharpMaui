@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:vlc="clr-namespace:LibVLCSharp.Maui.Controls;assembly=LibVLCSharp.Maui"
+             xmlns:vlc="clr-namespace:LibVLCSharp.Maui.Views;assembly=LibVLCSharp.Maui"
              x:Class="VLCSharp.Maui.Sample.MainPage">
 
     <Grid Margin="10">
@@ -21,9 +21,9 @@
                     Grid.Column="1"
                     Clicked="Button_Clicked" />
         </Grid>
-        <vlc:VideoElement x:Name="MediaDraw"
-                          Grid.Row="1"
-                          Margin="0,10,0,0" />
+        <vlc:MediaView x:Name="Video"
+                       Grid.Row="1"
+                       Margin="0,10,0,0" />
     </Grid>
 
 </ContentPage>

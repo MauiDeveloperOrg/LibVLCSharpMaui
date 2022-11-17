@@ -1,5 +1,5 @@
-﻿using LibVLCSharp.Maui.Controls;
-using LibVLCSharp.Maui.Handlers;
+﻿using LibVLCSharp.Maui.Handlers;
+using LibVLCSharp.Maui.Views;
 using LibVLCSharp.Shared;
 
 namespace LibVLCSharp.Maui;
@@ -10,7 +10,7 @@ public static class AppBuilderExtensions
     {
         builder.ConfigureMauiHandlers(h =>
         {
-            h.AddHandler<VideoElement, VideoElementHandler>();
+            h.AddHandler<VideoFrame, VideoFrameHandler>();
         });
 
         Core.Initialize();

@@ -10,7 +10,7 @@ using Rect = Windows.Foundation.Rect;
 
 namespace LibVLCSharp.Maui.Platforms.Windows;
 
-public class VideoElement : Grid, IVideoView
+public class VideoFrame : Grid, IVideoView
 {
     private readonly CanvasControl canvasControl;
 
@@ -42,7 +42,7 @@ public class VideoElement : Grid, IVideoView
     }
     #endregion
 
-    public VideoElement()
+    public VideoFrame()
     {
         canvasControl = new();
         canvasControl.Draw += Canvas_Draw;

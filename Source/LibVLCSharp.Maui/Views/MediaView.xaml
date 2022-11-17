@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:LibVLCSharp.Maui.Views"
+             xmlns:vm="clr-namespace:LibVLCSharp.Maui.ViewModels"
+             x:Class="LibVLCSharp.Maui.Views.MediaView">
+    <ContentView.BindingContext>
+        <vm:MediaViewModel />
+    </ContentView.BindingContext>
+    <Grid>
+        <view:VideoFrame MediaPlayer="{Binding MediaPlayer}" />
+        <Grid BackgroundColor="Transparent">
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding PlaySwitchCommand}"
+                                      NumberOfTapsRequired="2" />
+            </Grid.GestureRecognizers>
+        </Grid>
+    </Grid>
+</ContentView>

@@ -24,6 +24,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" />
 		<PackageReference Include="LibVLCSharp" />
 	</ItemGroup>
 
@@ -35,6 +36,16 @@
 		<Using Include="LibVLCSharp.Shared.MediaPlayer">
 			<Alias>MediaPlayerX</Alias>
 		</Using>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\MediaView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Models\" />
 	</ItemGroup>
 
 </Project>
